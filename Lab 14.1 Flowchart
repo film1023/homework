@@ -1,0 +1,521 @@
+<mxGraphModel dx="1200" dy="1800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1800" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <!-- ============================================== -->
+    <!-- START Sub-Function: findMinMax -->
+    <!-- ============================================== -->
+    <mxCell id="F_Start_Header" value="ฟังก์ชัน: findMinMax" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#1D7644;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="600" y="30" width="160" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="F_Start" value="เริ่มต้น" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="620" y="80" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="F1" value="ขนาดของ Array (size) &lt;= 0 ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b653;" vertex="1" parent="1">
+      <mxGeometry x="600" y="150" width="160" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="F1_T" value="กำหนด &lt;br&gt;*min = 0, *max = 0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="810" y="150" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="F2" value="กำหนดค่าเริ่มต้น: &lt;br&gt;*min = arr[0], *max = arr[0]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="620" y="240" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="F3" value="i = 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="620" y="320" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="F4" value="i &lt; size ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b653;" vertex="1" parent="1">
+      <mxGeometry x="630" y="390" width="100" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="F5" value="arr[i] &lt; *min ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b653;" vertex="1" parent="1">
+      <mxGeometry x="610" y="480" width="140" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="F5_T" value="กำหนด *min = arr[i]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="810" y="480" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="F6" value="arr[i] &gt; *max ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b653;" vertex="1" parent="1">
+      <mxGeometry x="610" y="580" width="140" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="F6_T" value="กำหนด *max = arr[i]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="810" y="580" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="F7" value="i = i + 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="620" y="670" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="F_Stop" value="จบฟังก์ชัน&lt;br&gt;(Return)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="620" y="800" width="120" height="40" as="geometry" />
+    </mxCell>
+
+    <!-- Function findMinMax Connections (FIXED LABELS) -->
+    <mxCell id="F_C1" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="F_Start" target="F1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="679.5" y="120" as="sourcePoint" />
+        <mxPoint x="679.5" y="150" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- F1 -> F2 (False) -->
+    <mxCell id="F_C4" value="เท็จ (False)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="F1" target="F2">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="680" y="210" as="sourcePoint" />
+        <mxPoint x="680" y="240" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- F1 -> F1_T (True) -->
+    <mxCell id="F_C5" value="จริง (True)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;exitDx=0;exitDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="F1" target="F1_T">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="760" y="180" as="sourcePoint" />
+        <mxPoint x="810" y="180" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="F_C6" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="F1_T" target="F_Stop">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="870" y="210" as="sourcePoint" />
+        <mxPoint x="870" y="800" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="870" y="750" />
+          <mxPoint x="680" y="750" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="F_C7" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="F2" target="F3">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="680" y="300" as="sourcePoint" />
+        <mxPoint x="680" y="320" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="F_C8" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="F3" target="F4">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="680" y="360" as="sourcePoint" />
+        <mxPoint x="680" y="390" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- F4 -> F5 (True) -->
+    <mxCell id="F_C11" value="จริง (True)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="F4" target="F5">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="680" y="450" as="sourcePoint" />
+        <mxPoint x="680" y="480" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- F5 -> F5_T (True) -->
+    <mxCell id="F_C12" value="จริง (True)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="F5" target="F5_T">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="750" y="510" as="sourcePoint" />
+        <mxPoint x="810" y="510" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="780" y="510" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- F5 -> F6 (False) -->
+    <mxCell id="F_C15" value="เท็จ (False)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="F5" target="F6">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="680" y="540" as="sourcePoint" />
+        <mxPoint x="680" y="580" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="F_C16" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="F5_T" target="F6">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="870" y="540" as="sourcePoint" />
+        <mxPoint x="870" y="580" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="870" y="550" />
+          <mxPoint x="750" y="550" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- F6 -> F6_T (True) -->
+    <mxCell id="F_C17" value="จริง (True)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="F6" target="F6_T">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="750" y="610" as="sourcePoint" />
+        <mxPoint x="810" y="610" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="780" y="610" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- F6 -> F7 (False) -->
+    <mxCell id="F_C20" value="เท็จ (False)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="F6" target="F7">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="680" y="640" as="sourcePoint" />
+        <mxPoint x="680" y="670" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="F_C21" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="F6_T" target="F7">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="870" y="640" as="sourcePoint" />
+        <mxPoint x="870" y="670" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="870" y="655" />
+          <mxPoint x="750" y="655" />
+          <mxPoint x="750" y="690" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="F_C22" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="F7" target="F4">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="680" y="710" as="sourcePoint" />
+        <mxPoint x="680" y="770" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="600" y="710" />
+          <mxPoint x="600" y="420" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- F4 -> F_Stop (False) -->
+    <mxCell id="F_C23" value="เท็จ (False)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="F4" target="F_Stop">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="730" y="420" as="sourcePoint" />
+        <mxPoint x="780" y="420" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="780" y="420" />
+          <mxPoint x="780" y="820" />
+          <mxPoint x="740" y="820" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- ============================================== -->
+    <!-- END Sub-Function: findMinMax -->
+    <!-- ============================================== -->
+
+    <!-- ============================================== -->
+    <!-- START Main Function: main -->
+    <!-- ============================================== -->
+    <mxCell id="M_Start_Header" value="โปรแกรมหลัก: main" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#1D7644;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="10" y="30" width="160" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="M_Start" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="40" y="80" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M1" value="กำหนดตัวแปรเริ่มต้น: &lt;br&gt;MAX_SIZE=100, count=0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="20" y="150" width="140" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="M2" value="แสดงข้อความ 'Enter value:'" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="20" y="240" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M3" value="count &lt; MAX_SIZE และ &lt;br&gt;รับค่าตัวเลข (input_val) สำเร็จ ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b653;" vertex="1" parent="1">
+      <mxGeometry x="0" y="310" width="180" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="M4" value="เก็บ input_val ใน array[count] &lt;br&gt;และ count++" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="20" y="420" width="140" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="M5" value="รับอักขระถัดไป (next_char)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="20" y="490" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M6" value="next_char เป็น 'Enter' (&#13;n) &lt;br&gt;หรือ EOF ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b653;" vertex="1" parent="1">
+      <mxGeometry x="10" y="560" width="160" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="M7" value="คืน next_char &lt;br&gt;และ **ออกจาก Loop**" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="200" y="565" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="M8" value="next_char ไม่ใช่ 'ช่องว่าง' ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b653;" vertex="1" parent="1">
+      <mxGeometry x="10" y="670" width="160" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="M9" value="คืน next_char" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="200" y="680" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M10" value="count &gt; 0 (มีตัวเลขถูกป้อน) ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b653;" vertex="1" parent="1">
+      <mxGeometry x="10" y="790" width="160" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="M11_F" value="แสดงผล 'Output:' &lt;br&gt;และ 'No numbers entered.'" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="200" y="790" width="140" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="M11_T" value="แสดงผล 'Output:' และ 'Index:'" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="20" y="880" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M12" value="i = 0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="40" y="950" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M13" value="i &lt; count ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b653;" vertex="1" parent="1">
+      <mxGeometry x="30" y="1020" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="M14" value="แสดงผลค่า i (Index)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="40" y="1110" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M15" value="i = i + 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="40" y="1180" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M16" value="แสดงผล '\\n' และ 'Array:'" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="200" y="1030" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M17" value="i = 0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="200" y="1110" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M18" value="i &lt; count ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b653;" vertex="1" parent="1">
+      <mxGeometry x="190" y="1180" width="140" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="M19" value="แสดงผลค่า array[i]" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="370" y="1190" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M20" value="i = i + 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="370" y="1260" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M21" value="แสดงผล '\\n'" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="190" y="1320" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M22" value="เรียกใช้ฟังก์ชัน findMinMax &lt;br&gt;(array, count, &amp;min_val, &amp;max_val)" style="shape=process;whiteSpace=wrap;html=1;process=cross;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="170" y="1400" width="180" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="M23" value="แสดงผล 'Min: [ค่า min_val]'" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="190" y="1500" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M24" value="แสดงผล 'Max: [ค่า max_val]'" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="190" y="1570" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M25" value="จบคืนค่า 0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="200" y="1670" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="M_Stop" value="Stop" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="210" y="1740" width="100" height="40" as="geometry" />
+    </mxCell>
+
+    <!-- Main Function Connections (FIXED LABELS) -->
+    <mxCell id="M_C1" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M_Start" target="M1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="120" as="sourcePoint" />
+        <mxPoint x="90" y="150" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C2" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M1" target="M2">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="210" as="sourcePoint" />
+        <mxPoint x="90" y="240" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C3" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M2" target="M3">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="280" as="sourcePoint" />
+        <mxPoint x="90" y="310" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- M3 -> M4 (True) -->
+    <mxCell id="M_C6" value="จริง (True)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="M3" target="M4">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="390" as="sourcePoint" />
+        <mxPoint x="90" y="420" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C7" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M4" target="M5">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="470" as="sourcePoint" />
+        <mxPoint x="90" y="490" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C8" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M5" target="M6">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="530" as="sourcePoint" />
+        <mxPoint x="90" y="560" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- M6 -> M7 (True) -->
+    <mxCell id="M_C11" value="จริง (True)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;exitDx=0;exitDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="M6" target="M7">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="170" y="595" as="sourcePoint" />
+        <mxPoint x="200" y="595" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C12" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M7" target="M10">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="260" y="625" as="sourcePoint" />
+        <mxPoint x="260" y="790" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="260" y="740" />
+          <mxPoint x="170" y="740" />
+          <mxPoint x="170" y="820" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- M6 -> M8 (False) -->
+    <mxCell id="M_C13" value="เท็จ (False)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="M6" target="M8">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="630" as="sourcePoint" />
+        <mxPoint x="90" y="670" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- M8 -> M9 (True) -->
+    <mxCell id="M_C16" value="จริง (True)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;exitDx=0;exitDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="M8" target="M9">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="170" y="700" as="sourcePoint" />
+        <mxPoint x="200" y="700" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C17" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M9" target="M3">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="260" y="720" as="sourcePoint" />
+        <mxPoint x="260" y="770" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="260" y="350" />
+          <mxPoint x="180" y="350" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- M8 -> M3 (False) -->
+    <mxCell id="M_C18" value="เท็จ (False)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="M8" target="M3">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="730" as="sourcePoint" />
+        <mxPoint x="90" y="760" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="90" y="760" />
+          <mxPoint x="-40" y="760" />
+          <mxPoint x="-40" y="350" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- M3 -> M10 (False - กรณี Loop สิ้นสุดเพราะรับค่าไม่สำเร็จ) -->
+    <mxCell id="M_C19" value="เท็จ (False)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="M3" target="M10">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="390" as="sourcePoint" />
+        <mxPoint x="90" y="420" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="260" y="350" />
+          <mxPoint x="260" y="770" />
+          <mxPoint x="170" y="770" />
+          <mxPoint x="170" y="820" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- M10 -> M11_T (True) -->
+    <mxCell id="M_C20" value="จริง (True)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="M10" target="M11_T">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="850" as="sourcePoint" />
+        <mxPoint x="90" y="880" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- M10 -> M11_F (False) -->
+    <mxCell id="M_C23" value="เท็จ (False)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="M10" target="M11_F">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="170" y="820" as="sourcePoint" />
+        <mxPoint x="200" y="820" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C24" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M11_T" target="M12">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="920" as="sourcePoint" />
+        <mxPoint x="90" y="950" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C25" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M12" target="M13">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="990" as="sourcePoint" />
+        <mxPoint x="90" y="1020" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- M13 -> M14 (True) -->
+    <mxCell id="M_C28" value="จริง (True)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="M13" target="M14">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="1080" as="sourcePoint" />
+        <mxPoint x="90" y="1110" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C29" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M14" target="M15">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="1150" as="sourcePoint" />
+        <mxPoint x="90" y="1180" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C30" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M15" target="M13">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="1220" as="sourcePoint" />
+        <mxPoint x="90" y="1250" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="-10" y="1200" />
+          <mxPoint x="-10" y="1050" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- M13 -> M16 (False) -->
+    <mxCell id="M_C31" value="เท็จ (False)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="M13" target="M16">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="150" y="1050" as="sourcePoint" />
+        <mxPoint x="200" y="1050" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C32" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M16" target="M17">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="260" y="1070" as="sourcePoint" />
+        <mxPoint x="260" y="1110" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C33" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M17" target="M18">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="260" y="1150" as="sourcePoint" />
+        <mxPoint x="260" y="1180" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- M18 -> M19 (True) -->
+    <mxCell id="M_C36" value="จริง (True)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="M18" target="M19">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="1210" as="sourcePoint" />
+        <mxPoint x="370" y="1210" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C37" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M19" target="M20">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="1230" as="sourcePoint" />
+        <mxPoint x="430" y="1260" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C38" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M20" target="M18">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="1300" as="sourcePoint" />
+        <mxPoint x="430" y="1340" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="530" y="1280" />
+          <mxPoint x="530" y="1210" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- M18 -> M21 (False) -->
+    <mxCell id="M_C39" value="เท็จ (False)" style="endArrow=classic;html=1;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="M18" target="M21">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="260" y="1240" as="sourcePoint" />
+        <mxPoint x="260" y="1320" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C40" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M21" target="M22">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="260" y="1360" as="sourcePoint" />
+        <mxPoint x="260" y="1400" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C41" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M22" target="M23">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="260" y="1470" as="sourcePoint" />
+        <mxPoint x="260" y="1500" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C42" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M23" target="M24">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="260" y="1540" as="sourcePoint" />
+        <mxPoint x="260" y="1570" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C43" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M11_F" target="M25">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="270" y="850" as="sourcePoint" />
+        <mxPoint x="270" y="1670" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="360" y="820" />
+          <mxPoint x="360" y="1640" />
+          <mxPoint x="260" y="1640" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C44" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M24" target="M25">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="260" y="1610" as="sourcePoint" />
+        <mxPoint x="260" y="1670" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="260" y="1640" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="M_C45" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="M25" target="M_Stop">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="260" y="1710" as="sourcePoint" />
+        <mxPoint x="260" y="1740" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- ============================================== -->
+    <!-- END Main Function: main -->
+    <!-- ============================================== -->
+  </root>
+</mxGraphModel>
