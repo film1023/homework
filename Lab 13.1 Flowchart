@@ -1,0 +1,199 @@
+<mxGraphModel dx="1279" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-1" value="**PROGRAM หลัก: main**" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#1D70B9;fontSize=14;fontStyle=1" parent="1" vertex="1">
+      <mxGeometry x="340" y="20" width="180" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-2" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+      <mxGeometry x="370" y="60" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-2" target="hXhW-tB_K1M-YhP_95k0-4" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="100" as="sourcePoint" />
+        <mxPoint x="430" y="140" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-4" value="ประกาศตัวแปร integer: num1, num2" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+      <mxGeometry x="350" y="120" width="160" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-4" target="hXhW-tB_K1M-YhP_95k0-6" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="160" as="sourcePoint" />
+        <mxPoint x="430" y="200" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-6" value="แสดงผล: &quot;Enter num1:&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="350" y="180" width="160" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-6" target="hXhW-tB_K1M-YhP_95k0-8" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="220" as="sourcePoint" />
+        <mxPoint x="430" y="260" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-8" value="รับค่า num1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+      <mxGeometry x="370" y="240" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-8" target="hXhW-tB_K1M-YhP_95k0-10" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="300" as="sourcePoint" />
+        <mxPoint x="430" y="340" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="640" y="270" />
+          <mxPoint x="640" y="770" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-10" value="Return 1 (จบการทำงาน)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+      <mxGeometry x="580" y="750" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-11" value="รับค่าสำเร็จ (True)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+      <mxGeometry x="434" y="300" width="110" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-12" value="รับค่าไม่สำเร็จ (False)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+      <mxGeometry x="490" y="240" width="130" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-8" target="hXhW-tB_K1M-YhP_95k0-14" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="300" as="sourcePoint" />
+        <mxPoint x="430" y="340" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-14" value="แสดงผล: &quot;Enter num2:&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="350" y="320" width="160" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-14" target="hXhW-tB_K1M-YhP_95k0-16" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="360" as="sourcePoint" />
+        <mxPoint x="430" y="400" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-16" value="รับค่า num2" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+      <mxGeometry x="370" y="380" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-16" target="hXhW-tB_K1M-YhP_95k0-18" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="440" as="sourcePoint" />
+        <mxPoint x="430" y="480" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="640" y="410" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-18" value="Return 1 (จบการทำงาน)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+      <mxGeometry x="580" y="750" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-19" value="รับค่าไม่สำเร็จ (False)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+      <mxGeometry x="490" y="380" width="130" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-20" value="รับค่าสำเร็จ (True)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+      <mxGeometry x="434" y="440" width="110" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-16" target="hXhW-tB_K1M-YhP_95k0-22" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="440" as="sourcePoint" />
+        <mxPoint x="430" y="480" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-22" value="กำหนด Pointer:&lt;br&gt;ptr1 = &amp;num1&lt;br&gt;ptr2 = &amp;num2" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+      <mxGeometry x="350" y="460" width="160" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-22" target="hXhW-tB_K1M-YhP_95k0-24" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="510" as="sourcePoint" />
+        <mxPoint x="430" y="550" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-24" value="แสดงผล: &quot;Before swap...&quot; (num1, num2)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="330" y="530" width="200" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-24" target="hXhW-tB_K1M-YhP_95k0-26" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="570" as="sourcePoint" />
+        <mxPoint x="430" y="610" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-26" value="เรียกใช้: swapNumbers(ptr1, ptr2)" style="shape=process;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontStyle=1" parent="1" vertex="1">
+      <mxGeometry x="330" y="590" width="200" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-26" target="hXhW-tB_K1M-YhP_95k0-28" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="640" as="sourcePoint" />
+        <mxPoint x="430" y="680" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-28" value="แสดงผล: &quot;After swap...&quot; (num1, num2)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="330" y="660" width="200" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-28" target="hXhW-tB_K1M-YhP_95k0-30" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="700" as="sourcePoint" />
+        <mxPoint x="430" y="740" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-30" value="Return 0 (จบการทำงาน)" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+      <mxGeometry x="350" y="720" width="160" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-30" target="hXhW-tB_K1M-YhP_95k0-32" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="760" as="sourcePoint" />
+        <mxPoint x="430" y="800" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-32" value="Stop" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+      <mxGeometry x="370" y="780" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-33" value="**FUNCTION: swapNumbers**" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#1D70B9;fontSize=14;fontStyle=1" parent="1" vertex="1">
+      <mxGeometry x="640" y="20" width="220" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-34" value="Start (รับ Pointer: *ptr1, *ptr2)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b658;" parent="1" vertex="1">
+      <mxGeometry x="680" y="60" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-34" target="hXhW-tB_K1M-YhP_95k0-36" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="750" y="100" as="sourcePoint" />
+        <mxPoint x="750" y="140" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-36" value="ประกาศตัวแปร integer: temp" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+      <mxGeometry x="680" y="120" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-36" target="hXhW-tB_K1M-YhP_95k0-38" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="750" y="160" as="sourcePoint" />
+        <mxPoint x="750" y="200" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-38" value="temp = *ptr1" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+      <mxGeometry x="680" y="180" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-39" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-38" target="hXhW-tB_K1M-YhP_95k0-40" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="750" y="220" as="sourcePoint" />
+        <mxPoint x="750" y="260" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-40" value="*ptr1 = *ptr2" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+      <mxGeometry x="680" y="240" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-41" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-40" target="hXhW-tB_K1M-YhP_95k0-42" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="750" y="280" as="sourcePoint" />
+        <mxPoint x="750" y="320" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-42" value="*ptr2 = temp" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+      <mxGeometry x="680" y="300" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-43" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="hXhW-tB_K1M-YhP_95k0-42" target="hXhW-tB_K1M-YhP_95k0-44" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="750" y="340" as="sourcePoint" />
+        <mxPoint x="750" y="380" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hXhW-tB_K1M-YhP_95k0-44" value="Stop (กลับไปยัง main)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b658;" parent="1" vertex="1">
+      <mxGeometry x="680" y="360" width="140" height="40" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
