@@ -1,0 +1,485 @@
+<mxGraphModel dx="820" dy="1500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1600" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <!-- Start -->
+    <mxCell id="A" value="เริ่มต้น" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6a329f;fontColor=#ffffff;strokeColor=#37176E;" vertex="1" parent="1">
+      <mxGeometry x="270" y="20" width="120" height="50" as="geometry" />
+    </mxCell>
+    <!-- Define Variable -->
+    <mxCell id="B" value="กำหนดตัวแปร num (จำนวนเต็ม)" style="shape=process;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="250" y="90" width="160" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="A-B" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="A" target="B">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="140" as="sourcePoint" />
+        <mxPoint x="380" y="90" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Output Prompt -->
+    <mxCell id="C" value="แสดงผล: &quot;User Input: &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="250" y="160" width="160" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="B-C" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="B" target="C">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="230" as="sourcePoint" />
+        <mxPoint x="380" y="180" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Process Scanf -->
+    <mxCell id="D" value="รับค่าตัวเลขใส่ในตัวแปร num" style="shape=process;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="250" y="230" width="160" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="C-D" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="C" target="D">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="300" as="sourcePoint" />
+        <mxPoint x="380" y="250" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition Scanf Check -->
+    <mxCell id="E" value="การรับค่าตัวเลขสำเร็จหรือไม่ (scanf != 1)?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="210" y="300" width="240" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="D-E" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="D" target="E">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="370" as="sourcePoint" />
+        <mxPoint x="380" y="320" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Invalid Branch (False) -->
+    <mxCell id="F" value="แสดงผล: &quot;Invalid Input.&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="490" y="305" width="160" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="E-F" value="เท็จ" style="endArrow=classic;html=1;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="E" target="F">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="400" y="330" as="sourcePoint" />
+        <mxPoint x="450" y="380" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="G_RET" value="คืนค่า 1 (Return 1)" style="shape=process;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="490" y="385" width="160" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="F-G_RET" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="F" target="G_RET">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="570" y="450" as="sourcePoint" />
+        <mxPoint x="620" y="400" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="G_RET-STOP" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;" edge="1" parent="1" source="G_RET" target="Z_STOP">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="570" y="450" as="sourcePoint" />
+        <mxPoint x="330" y="1420" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="570" y="1420" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- Valid Branch (True) -->
+    <mxCell id="H" value="แสดงผล: &quot;Result : &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="250" y="390" width="160" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="E-H" value="จริง" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="E" target="H">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="460" as="sourcePoint" />
+        <mxPoint x="380" y="410" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Switch-Case Start (Condition num == 1) -->
+    <mxCell id="I1" value="num = 1?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="280" y="470" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="H-I1" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="H" target="I1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="540" as="sourcePoint" />
+        <mxPoint x="380" y="490" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Case 1 Output (True) -->
+    <mxCell id="O1" value="แสดงผล: &quot;one&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="100" y="470" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I1-O1" value="จริง" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="I1" target="O1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="230" y="495" as="sourcePoint" />
+        <mxPoint x="280" y="445" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition num == 2 (False path from I1) -->
+    <mxCell id="I2" value="num = 2?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="280" y="550" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I1-I2" value="เท็จ" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="I1" target="I2">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="540" as="sourcePoint" />
+        <mxPoint x="380" y="490" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Case 2 Output -->
+    <mxCell id="O2" value="แสดงผล: &quot;two&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="100" y="550" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I2-O2" value="จริง" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="I2" target="O2">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="230" y="575" as="sourcePoint" />
+        <mxPoint x="280" y="525" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition num == 3 -->
+    <mxCell id="I3" value="num = 3?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="280" y="630" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I2-I3" value="เท็จ" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="I2" target="I3">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="620" as="sourcePoint" />
+        <mxPoint x="380" y="570" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Case 3 Output -->
+    <mxCell id="O3" value="แสดงผล: &quot;three&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="100" y="630" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I3-O3" value="จริง" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="I3" target="O3">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="230" y="655" as="sourcePoint" />
+        <mxPoint x="280" y="605" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition num == 4 -->
+    <mxCell id="I4" value="num = 4?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="280" y="710" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I3-I4" value="เท็จ" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="I3" target="I4">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="700" as="sourcePoint" />
+        <mxPoint x="380" y="650" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Case 4 Output -->
+    <mxCell id="O4" value="แสดงผล: &quot;four&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="100" y="710" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I4-O4" value="จริง" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="I4" target="O4">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="230" y="735" as="sourcePoint" />
+        <mxPoint x="280" y="685" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition num == 5 -->
+    <mxCell id="I5" value="num = 5?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="280" y="790" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I4-I5" value="เท็จ" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="I4" target="I5">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="780" as="sourcePoint" />
+        <mxPoint x="380" y="730" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Case 5 Output -->
+    <mxCell id="O5" value="แสดงผล: &quot;five&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="100" y="790" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I5-O5" value="จริง" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="I5" target="O5">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="230" y="815" as="sourcePoint" />
+        <mxPoint x="280" y="765" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition num == 6 -->
+    <mxCell id="I6" value="num = 6?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="280" y="870" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I5-I6" value="เท็จ" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="I5" target="I6">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="860" as="sourcePoint" />
+        <mxPoint x="380" y="810" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Case 6 Output -->
+    <mxCell id="O6" value="แสดงผล: &quot;six&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="100" y="870" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I6-O6" value="จริง" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="I6" target="O6">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="230" y="895" as="sourcePoint" />
+        <mxPoint x="280" y="845" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition num == 7 -->
+    <mxCell id="I7" value="num = 7?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="280" y="950" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I6-I7" value="เท็จ" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="I6" target="I7">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="940" as="sourcePoint" />
+        <mxPoint x="380" y="890" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Case 7 Output -->
+    <mxCell id="O7" value="แสดงผล: &quot;seven&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="100" y="950" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I7-O7" value="จริง" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="I7" target="O7">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="230" y="975" as="sourcePoint" />
+        <mxPoint x="280" y="925" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition num == 8 -->
+    <mxCell id="I8" value="num = 8?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="280" y="1030" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I7-I8" value="เท็จ" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="I7" target="I8">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="1020" as="sourcePoint" />
+        <mxPoint x="380" y="970" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Case 8 Output -->
+    <mxCell id="O8" value="แสดงผล: &quot;eight&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1030" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I8-O8" value="จริง" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="I8" target="O8">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="230" y="1055" as="sourcePoint" />
+        <mxPoint x="280" y="1005" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition num == 9 -->
+    <mxCell id="I9" value="num = 9?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="280" y="1110" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I8-I9" value="เท็จ" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="I8" target="I9">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="1100" as="sourcePoint" />
+        <mxPoint x="380" y="1050" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Case 9 Output -->
+    <mxCell id="O9" value="แสดงผล: &quot;nine&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1110" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I9-O9" value="จริง" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="I9" target="O9">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="230" y="1135" as="sourcePoint" />
+        <mxPoint x="280" y="1085" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition num == 10 -->
+    <mxCell id="I10" value="num = 10?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="280" y="1190" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I9-I10" value="เท็จ" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="I9" target="I10">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="1180" as="sourcePoint" />
+        <mxPoint x="380" y="1130" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Case 10 Output -->
+    <mxCell id="O10" value="แสดงผล: &quot;ten&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1190" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I10-O10" value="จริง" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="I10" target="O10">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="230" y="1215" as="sourcePoint" />
+        <mxPoint x="280" y="1165" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition num == 11 -->
+    <mxCell id="I11" value="num = 11?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="280" y="1270" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I10-I11" value="เท็จ" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="I10" target="I11">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="1260" as="sourcePoint" />
+        <mxPoint x="380" y="1210" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Case 11 Output -->
+    <mxCell id="O11" value="แสดงผล: &quot;eleven&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1270" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I11-O11" value="จริง" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="I11" target="O11">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="230" y="1295" as="sourcePoint" />
+        <mxPoint x="280" y="1245" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition num == 12 -->
+    <mxCell id="I12" value="num = 12?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="280" y="1350" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I11-I12" value="เท็จ" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="I11" target="I12">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="1340" as="sourcePoint" />
+        <mxPoint x="380" y="1290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Case 12 Output -->
+    <mxCell id="O12" value="แสดงผล: &quot;twelve&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="100" y="1350" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I12-O12" value="จริง" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="I12" target="O12">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="230" y="1375" as="sourcePoint" />
+        <mxPoint x="280" y="1325" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Default Case Output (False path from I12) -->
+    <mxCell id="ODef" value="แสดงผล: &quot;Number is out of range...&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="250" y="1430" width="160" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="I12-ODef" value="เท็จ" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="I12" target="ODef">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="1420" as="sourcePoint" />
+        <mxPoint x="380" y="1370" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- Merge Point for Case Outputs -->
+    <mxCell id="MERGE" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="150" y="1460" width="10" height="10" as="geometry" />
+    </mxCell>
+    <!-- Connections from Case Outputs to MERGE -->
+    <mxCell id="O1-MERGE" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1;" edge="1" parent="1" source="O1" target="MERGE">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="160" y="520" as="sourcePoint" />
+        <mxPoint x="210" y="570" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="160" y="1465" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="O2-MERGE" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1;" edge="1" parent="1" source="O2" target="MERGE">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="160" y="600" as="sourcePoint" />
+        <mxPoint x="210" y="650" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="160" y="1465" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="O3-MERGE" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1;" edge="1" parent="1" source="O3" target="MERGE">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="160" y="680" as="sourcePoint" />
+        <mxPoint x="210" y="730" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="160" y="1465" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="O4-MERGE" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1;" edge="1" parent="1" source="O4" target="MERGE">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="160" y="760" as="sourcePoint" />
+        <mxPoint x="210" y="810" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="160" y="1465" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="O5-MERGE" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1;" edge="1" parent="1" source="O5" target="MERGE">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="160" y="840" as="sourcePoint" />
+        <mxPoint x="210" y="890" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="160" y="1465" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="O6-MERGE" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1;" edge="1" parent="1" source="O6" target="MERGE">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="160" y="920" as="sourcePoint" />
+        <mxPoint x="210" y="970" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="160" y="1465" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="O7-MERGE" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1;" edge="1" parent="1" source="O7" target="MERGE">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="160" y="1000" as="sourcePoint" />
+        <mxPoint x="210" y="1050" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="160" y="1465" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="O8-MERGE" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1;" edge="1" parent="1" source="O8" target="MERGE">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="160" y="1080" as="sourcePoint" />
+        <mxPoint x="210" y="1130" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="160" y="1465" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="O9-MERGE" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1;" edge="1" parent="1" source="O9" target="MERGE">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="160" y="1160" as="sourcePoint" />
+        <mxPoint x="210" y="1210" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="160" y="1465" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="O10-MERGE" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1;" edge="1" parent="1" source="O10" target="MERGE">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="160" y="1240" as="sourcePoint" />
+        <mxPoint x="210" y="1290" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="160" y="1465" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="O11-MERGE" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1;" edge="1" parent="1" source="O11" target="MERGE">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="160" y="1320" as="sourcePoint" />
+        <mxPoint x="210" y="1370" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="160" y="1465" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="O12-MERGE" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1;" edge="1" parent="1" source="O12" target="MERGE">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="160" y="1400" as="sourcePoint" />
+        <mxPoint x="210" y="1450" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="160" y="1465" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ODef-MERGE" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=1;entryY=0.5;" edge="1" parent="1" source="ODef" target="MERGE">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="1500" as="sourcePoint" />
+        <mxPoint x="380" y="1450" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="330" y="1500" />
+          <mxPoint x="160" y="1465" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- Final Return 0 -->
+    <mxCell id="Z_RET" value="คืนค่า 0 (Return 0)" style="shape=process;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="250" y="1530" width="160" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="MERGE-Z_RET" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0.5;entryX=0.5;entryY=0;dashed=1;" edge="1" parent="1" source="MERGE" target="Z_RET">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="160" y="1470" as="sourcePoint" />
+        <mxPoint x="330" y="1530" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="160" y="1555" />
+          <mxPoint x="330" y="1555" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- Stop -->
+    <mxCell id="Z_STOP" value="สิ้นสุด" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6a329f;fontColor=#ffffff;strokeColor=#37176E;" vertex="1" parent="1">
+      <mxGeometry x="270" y="1610" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="Z_RET-STOP" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="Z_RET" target="Z_STOP">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="1600" as="sourcePoint" />
+        <mxPoint x="380" y="1550" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+  </root>
+</mxGraphModel>
