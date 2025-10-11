@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, num3;
+    int sum;
+    printf("--- โปรแกรมคำนวณผลรวม 3 ตัวเลข ---\n");
+    printf("กรุณากรอกตัวเลขจำนวนเต็มตัวที่ 1: ");
+    if (scanf("%d", &num1) != 1) {
+        printf("\n❌ ข้อผิดพลาด: การรับค่าตัวเลขตัวที่ 1 ไม่ถูกต้อง\n");
+        return 1;
+    }
+    printf("กรุณากรอกตัวเลขจำนวนเต็มตัวที่ 2: ");
+    if (scanf("%d", &num2) != 1) {
+        printf("\n❌ ข้อผิดพลาด: การรับค่าตัวเลขตัวที่ 2 ไม่ถูกต้อง\n");
+        return 1;
+    }
+    printf("กรุณากรอกตัวเลขจำนวนเต็มตัวที่ 3: ");
+    if (scanf("%d", &num3) != 1) {
+        printf("\n❌ ข้อผิดพลาด: การรับค่าตัวเลขตัวที่ 3 ไม่ถูกต้อง\n");
+        return 1;
+    }
+    sum = num1 + num2 + num3;
+    printf("\n--- ผลลัพธ์ ---\n");
+    printf("ตัวเลขที่กรอกคือ: %d, %d, %d\n", num1, num2, num3);
+    printf("ผลบวก: %d + %d + %d = %d\n", num1, num2, num3, sum);
+    printf("Answer = %d\n", sum);
+    printf("----------------\n");
+    return 0;
+}
