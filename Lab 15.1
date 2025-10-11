@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+#define MAX_FILENAME_LENGTH 100
+
+int main() {
+    FILE *file_ptr;
+    char filename[MAX_FILENAME_LENGTH];
+    char ch;
+    int word_count = 0;
+    // 'in_word' flag: 1 ถ้าย่อหน้าปัจจุบันอยู่ในคำ, 0 ถ้านอกคำ (เช่น อยู่ในช่วงช่องว่าง)
+    int in_word = 0; 
+
+    // 1. รับชื่อไฟล์จากผู้ใช้
+    printf("Input\n");
+    printf("Enter file name: ");
+    if (scanf("%s", filename) != 1) {
+        // จัดการกรณีที่รับอินพุตไม่ได้
+        fprintf(stderr, "Error reading file name.\n");
+        return 1;
+    }
+
+    // 2. เปิดไฟล์
+    file_ptr = fopen(filename, "r");
+
+    // 3. ตรวจสอบว่าเปิดไฟล์ได้หรือไม่
+    if (file_ptr == NULL) {
+        printf("Error: Could not open file \"%s\".\n", filename);
+        return 1;
+    }
+
+    // 4. อ่านไฟล์ทีละตัวอักษรและนับคำ
+    while ((ch = fgetc(file_ptr)) != EOF) {
+        // ตรวจสอบว่าเป็นตัวคั่นคำ (ช่องว่าง, แท็บ, บรรทัดใหม่) หรือไม่
+        // isspace() เป็นฟังก์ชันจาก ctype.h ที่ตรวจสอบว่าตัวอักษรเป็น whitespace หรือไม่
+        if (isspace(ch)) {
+            // ถ้าเจอตัวคั่นคำ ให้ตั้งค่า in_word เป็น 0 (หมายถึงตอนนี้อยู่นอกคำ)
+            in_word = 0;
+        } else {
+            // ถ้าไม่เป็นตัวคั่นคำ (หมายถึงเป็นส่วนหนึ่งของคำ)
+            
+            // ตรวจสอบว่าเพิ่งเริ่มเข้าคำใหม่หรือไม่
+            if (in_word == 0) {
+                // ถ้า in_word เป็น 0 ก่อนหน้านี้ แสดงว่าเราเพิ่งเจอตัวอักษรแรกของคำใหม่
+                word_count++; // นับคำเพิ่ม
+                in_word = 1;  // ตั้งค่าเป็น 1 เพื่อระบุว่าตอนนี้เราอยู่ในคำ
+            }
+            // ถ้า in_word เป็น 1 อยู่แล้ว ก็แค่ทำต่อไป (ยังคงอยู่ในคำเดิม)
+        }
+    }
+
+    // 5. ปิดไฟล์
+    fclose(file_ptr);
+
+    // 6. แสดงผลลัพธ์
+    printf("\nOutput\n");
+    printf("Total number of words in '%s': %d words\n", filename, word_count);
+
+    return 0;
+}
+
+// *** หมายเหตุ: สำหรับการทดสอบโค้ดนี้ คุณต้องสร้างไฟล์ข้อความชื่อ 'b.txt' 
+//               และใส่เนื้อหาตาม Test Case ก่อนรันโปรแกรม
+
+/*
+ตัวอย่างไฟล์ b.txt สำหรับ Test Case 1:
+Hi, This is my first time in RMUTL.
+
+ผลลัพธ์ที่คาดหวัง:
+Total number of words in 'b.txt': 8 words
+(คำว่า "Hi," และ "RMUTL." จะนับเป็น 1 คำ เนื่องจากเครื่องหมายวรรคตอนไม่ได้ถูกนับเป็นตัวคั่นคำตาม isspace())
+
+ตัวอย่างไฟล์ b.txt สำหรับ Test Case 2:
+Encourage your students to test their program with different input files to ensure its correctness
+
+ผลลัพธ์ที่คาดหวัง:
+Total number of words in 'b.txt': 15 words
+*/
