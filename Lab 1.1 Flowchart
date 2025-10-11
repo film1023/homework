@@ -1,0 +1,184 @@
+<mxGraphModel dx="820" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- 1. Start -->
+    <mxCell id="start" value="เริ่มต้น" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6a329a;fontColor=#ffffff;strokeColor=#371a4d;" vertex="1" parent="1">
+      <mxGeometry x="360" y="0" width="100" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- 2. Process: Declaration -->
+    <mxCell id="declare" value="ประกาศตัวแปร: num1, num2, num3, sum" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="330" y="80" width="160" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="e1" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="declare">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="410" y="50" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 3. Output: Title -->
+    <mxCell id="output_title" value="แสดงผล: '--- โปรแกรมคำนวณ... ---'" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="310" y="160" width="200" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="e2" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="declare" target="output_title">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 4. I/O: Prompt 1 -->
+    <mxCell id="io_prompt1" value="แสดงผล: 'กรอกตัวเลขตัวที่ 1:'&lt;br&gt;รับค่า num1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="330" y="240" width="160" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="e3" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="output_title" target="io_prompt1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 5. Condition 1: Check num1 -->
+    <mxCell id="cond1" value="รับค่า num1 สำเร็จหรือไม่ (scanf != 1)?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="330" y="340" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="e4" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="io_prompt1" target="cond1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- C1 TRUE PATH (Error 1) -->
+    <mxCell id="error_out1" value="แสดงผล: '❌ ข้อผิดพลาด...ตัวที่ 1 ไม่ถูกต้อง'" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="540" y="340" width="180" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="e5" value="จริง" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;" edge="1" parent="1" source="cond1" target="error_out1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="490" y="380" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+
+    <mxCell id="error_return1" value="คืนค่า 1 (return 1)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+      <mxGeometry x="560" y="430" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e6" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="error_out1" target="error_return1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="stop1" value="หยุด" style="ellipse;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+      <mxGeometry x="580" y="500" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="e7" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="error_return1" target="stop1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- C1 FALSE PATH (Continue to num2) -->
+    <mxCell id="io_prompt2" value="แสดงผล: 'กรอกตัวเลขตัวที่ 2:'&lt;br&gt;รับค่า num2" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="330" y="450" width="160" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="e8" value="เท็จ" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundEnabled=1;labelBackgroundColor=none;" edge="1" parent="1" source="cond1" target="io_prompt2">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="410" y="420" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 6. Condition 2: Check num2 -->
+    <mxCell id="cond2" value="รับค่า num2 สำเร็จหรือไม่ (scanf != 1)?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="330" y="550" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="e9" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="io_prompt2" target="cond2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- C2 TRUE PATH (Error 2) -->
+    <mxCell id="error_out2" value="แสดงผล: '❌ ข้อผิดพลาด...ตัวที่ 2 ไม่ถูกต้อง'" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="540" y="550" width="180" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="e10" value="จริง" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;" edge="1" parent="1" source="cond2" target="error_out2">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="490" y="590" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+
+    <mxCell id="error_return2" value="คืนค่า 1 (return 1)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+      <mxGeometry x="560" y="640" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e11" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="error_out2" target="error_return2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="stop2" value="หยุด" style="ellipse;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+      <mxGeometry x="580" y="710" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="e12" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="error_return2" target="stop2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- C2 FALSE PATH (Continue to num3) -->
+    <mxCell id="io_prompt3" value="แสดงผล: 'กรอกตัวเลขตัวที่ 3:'&lt;br&gt;รับค่า num3" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="330" y="700" width="160" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="e13" value="เท็จ" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cond2" target="io_prompt3">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 7. Condition 3: Check num3 -->
+    <mxCell id="cond3" value="รับค่า num3 สำเร็จหรือไม่ (scanf != 1)?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="330" y="800" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="e14" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="io_prompt3" target="cond3">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- C3 TRUE PATH (Error 3) -->
+    <mxCell id="error_out3" value="แสดงผล: '❌ ข้อผิดพลาด...ตัวที่ 3 ไม่ถูกต้อง'" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="540" y="800" width="180" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="e15" value="จริง" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;" edge="1" parent="1" source="cond3" target="error_out3">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="490" y="840" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+
+    <mxCell id="error_return3" value="คืนค่า 1 (return 1)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+      <mxGeometry x="560" y="890" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e16" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="error_out3" target="error_return3">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="stop3" value="หยุด" style="ellipse;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+      <mxGeometry x="580" y="960" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="e17" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="error_return3" target="stop3">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- C3 FALSE PATH (Calculation & Output) -->
+    <mxCell id="process_calc" value="คำนวณ: sum = num1 + num2 + num3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="320" y="920" width="180" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="e18" value="เท็จ" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cond3" target="process_calc">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 8. Output: Results -->
+    <mxCell id="output_results" value="แสดงผลลัพธ์ทั้งหมด:&lt;br&gt;- ผลลัพธ์&lt;br&gt;- ตัวเลขที่กรอก&lt;br&gt;- ผลบวก&lt;br&gt;- Answer = sum" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="310" y="1000" width="200" height="90" as="geometry" />
+    </mxCell>
+    <mxCell id="e19" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="process_calc" target="output_results">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 9. Process: Return 0 -->
+    <mxCell id="final_return" value="คืนค่า 0 (return 0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+      <mxGeometry x="340" y="1120" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e20" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="output_results" target="final_return">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 10. Stop -->
+    <mxCell id="stop_final" value="หยุด" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6a329a;fontColor=#ffffff;strokeColor=#371a4d;" vertex="1" parent="1">
+      <mxGeometry x="360" y="1190" width="100" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="e21" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="final_return" target="stop_final">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>
