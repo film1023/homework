@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int number, originalNumber, remainder, sum = 0;
+    printf("Enter Number: ");
+    scanf("%d", &number);
+    originalNumber = number;
+    while (number != 0) {
+        remainder = number % 10;
+        sum += remainder * remainder * remainder; 
+        number /= 10;
+    }
+    if (sum == originalNumber) {
+        printf("Output : Pass.\n");
+    } else {
+        printf("Output : Not Pass.\n");
+    }
+    return 0;
+}
