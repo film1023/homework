@@ -1,0 +1,279 @@
+<mxGraphModel dx="820" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <!-- Start -->
+    <mxCell id="2" value="เริ่มต้น (Start)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+      <mxGeometry x="375" y="40" width="100" height="40" as="geometry"/>
+    </mxCell>
+    <!-- Process (ประกาศตัวแปร) -->
+    <mxCell id="3" value="ประกาศตัวแปร N" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+      <mxGeometry x="350" y="110" width="150" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="4" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="2" target="3">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="425" y="80" as="sourcePoint"/>
+        <mxPoint x="425" y="110" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Input/Output (รับค่า) -->
+    <mxCell id="5" value="พิมพ์ข้อความ &quot;Enter value : &quot;&lt;br&gt;รับค่า N" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+      <mxGeometry x="350" y="180" width="150" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="6" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="3" target="5">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="425" y="150" as="sourcePoint"/>
+        <mxPoint x="425" y="180" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Process (พิมพ์ส่วนหัว) -->
+    <mxCell id="7" value="พิมพ์ &quot;Output Series: &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+      <mxGeometry x="350" y="270" width="150" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="8" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="5" target="7">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="425" y="240" as="sourcePoint"/>
+        <mxPoint x="425" y="270" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition (ตรวจสอบเลขคี่) -->
+    <mxCell id="9" value="N หาร 2 แล้วเศษไม่เท่ากับ 0&lt;br&gt;(N เป็นเลขคี่)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+      <mxGeometry x="330" y="340" width="190" height="80" as="geometry"/>
+    </mxCell>
+    <mxCell id="10" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="7" target="9">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="425" y="310" as="sourcePoint"/>
+        <mxPoint x="425" y="340" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- True Path (เลขคี่) -->
+    <!-- Process (เริ่มต้น Loop คี่) -->
+    <mxCell id="11" value="กำหนด i = 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+      <mxGeometry x="140" y="440" width="100" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="12" value="จริง" style="edgeLabel;resizable=0;html=1;align=center;" connectable="0" vertex="1" parent="1">
+      <mxGeometry x="270" y="370" as="geometry"/>
+    </mxCell>
+    <mxCell id="13" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=0.5;entryY=0" edge="1" parent="1" source="9" target="11">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="330" y="380" as="sourcePoint"/>
+        <Array as="points">
+          <mxPoint x="190" y="380"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition (เงื่อนไข Loop คี่) -->
+    <mxCell id="14" value="i &lt;= N" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+      <mxGeometry x="165" y="510" width="50" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="15" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="11" target="14">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="190" y="480" as="sourcePoint"/>
+        <mxPoint x="190" y="510" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Process (ทำงาน Loop คี่) -->
+    <mxCell id="16" value="พิมพ์ค่า i" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+      <mxGeometry x="140" y="590" width="100" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="17" value="จริง" style="edgeLabel;resizable=0;html=1;align=center;" connectable="0" vertex="1" parent="1">
+      <mxGeometry x="190" y="560" as="geometry"/>
+    </mxCell>
+    <mxCell id="18" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="14" target="16">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="190" y="560" as="sourcePoint"/>
+        <mxPoint x="190" y="590" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition (เงื่อนไขพิมพ์ space คี่) -->
+    <mxCell id="19" value="i + 2 &lt;= N" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+      <mxGeometry x="140" y="660" width="100" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="20" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="16" target="19">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="190" y="630" as="sourcePoint"/>
+        <mxPoint x="190" y="660" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Process (พิมพ์ space คี่) -->
+    <mxCell id="21" value="พิมพ์ &quot; &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+      <mxGeometry x="80" y="740" width="80" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="22" value="จริง" style="edgeLabel;resizable=0;html=1;align=center;" connectable="0" vertex="1" parent="1">
+      <mxGeometry x="140" y="720" as="geometry"/>
+    </mxCell>
+    <mxCell id="23" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=0.5;entryY=0" edge="1" parent="1" source="19" target="21">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="190" y="710" as="sourcePoint"/>
+        <Array as="points">
+          <mxPoint x="120" y="685"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- Process (i += 2) -->
+    <mxCell id="24" value="i = i + 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+      <mxGeometry x="140" y="810" width="100" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="25" value="เท็จ" style="edgeLabel;resizable=0;html=1;align=center;" connectable="0" vertex="1" parent="1">
+      <mxGeometry x="225" y="720" as="geometry"/>
+    </mxCell>
+    <mxCell id="26" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0" edge="1" parent="1" source="19" target="24">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="240" y="685" as="sourcePoint"/>
+        <Array as="points">
+          <mxPoint x="190" y="685"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="27" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="21" target="24">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="120" y="780" as="sourcePoint"/>
+        <Array as="points">
+          <mxPoint x="120" y="830"/>
+          <mxPoint x="190" y="830"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="28" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1" edge="1" parent="1" source="24" target="14">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="190" y="810" as="sourcePoint"/>
+        <Array as="points">
+          <mxPoint x="190" y="560"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- False Path (เลขคู่) -->
+    <!-- Process (เริ่มต้น Loop คู่) -->
+    <mxCell id="29" value="กำหนด i = N" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+      <mxGeometry x="560" y="440" width="100" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="30" value="เท็จ" style="edgeLabel;resizable=0;html=1;align=center;" connectable="0" vertex="1" parent="1">
+      <mxGeometry x="520" y="370" as="geometry"/>
+    </mxCell>
+    <mxCell id="31" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0" edge="1" parent="1" source="9" target="29">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="520" y="380" as="sourcePoint"/>
+        <Array as="points">
+          <mxPoint x="610" y="380"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition (เงื่อนไข Loop คู่) -->
+    <mxCell id="32" value="i &gt;= 0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+      <mxGeometry x="585" y="510" width="50" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="33" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="29" target="32">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="610" y="480" as="sourcePoint"/>
+        <mxPoint x="610" y="510" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Process (ทำงาน Loop คู่) -->
+    <mxCell id="34" value="พิมพ์ค่า i" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+      <mxGeometry x="560" y="590" width="100" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="35" value="จริง" style="edgeLabel;resizable=0;html=1;align=center;" connectable="0" vertex="1" parent="1">
+      <mxGeometry x="610" y="560" as="geometry"/>
+    </mxCell>
+    <mxCell id="36" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="32" target="34">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="610" y="560" as="sourcePoint"/>
+        <mxPoint x="610" y="590" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Condition (เงื่อนไขพิมพ์ space คู่) -->
+    <mxCell id="37" value="i - 2 &gt;= 0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+      <mxGeometry x="560" y="660" width="100" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="38" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="34" target="37">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="610" y="630" as="sourcePoint"/>
+        <mxPoint x="610" y="660" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Process (พิมพ์ space คู่) -->
+    <mxCell id="39" value="พิมพ์ &quot; &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+      <mxGeometry x="640" y="740" width="80" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="40" value="จริง" style="edgeLabel;resizable=0;html=1;align=center;" connectable="0" vertex="1" parent="1">
+      <mxGeometry x="660" y="720" as="geometry"/>
+    </mxCell>
+    <mxCell id="41" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0" edge="1" parent="1" source="37" target="39">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="610" y="685" as="sourcePoint"/>
+        <Array as="points">
+          <mxPoint x="680" y="685"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- Process (i -= 2) -->
+    <mxCell id="42" value="i = i - 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+      <mxGeometry x="560" y="810" width="100" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="43" value="เท็จ" style="edgeLabel;resizable=0;html=1;align=center;" connectable="0" vertex="1" parent="1">
+      <mxGeometry x="525" y="720" as="geometry"/>
+    </mxCell>
+    <mxCell id="44" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=0.5;entryY=0" edge="1" parent="1" source="37" target="42">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="560" y="685" as="sourcePoint"/>
+        <Array as="points">
+          <mxPoint x="610" y="685"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="45" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="39" target="42">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="680" y="780" as="sourcePoint"/>
+        <Array as="points">
+          <mxPoint x="680" y="830"/>
+          <mxPoint x="610" y="830"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="46" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1" edge="1" parent="1" source="42" target="32">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="610" y="810" as="sourcePoint"/>
+        <Array as="points">
+          <mxPoint x="610" y="560"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- Merge and End -->
+    <mxCell id="47" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="14" target="48">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="190" y="860" as="sourcePoint"/>
+        <Array as="points">
+          <mxPoint x="190" y="900"/>
+          <mxPoint x="425" y="900"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="48" value="พิมพ์ขึ้นบรรทัดใหม่ (\n)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+      <mxGeometry x="350" y="930" width="150" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="49" value="เท็จ" style="edgeLabel;resizable=0;html=1;align=center;" connectable="0" vertex="1" parent="1">
+      <mxGeometry x="220" y="530" as="geometry"/>
+    </mxCell>
+    <mxCell id="50" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="32" target="48">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="610" y="860" as="sourcePoint"/>
+        <Array as="points">
+          <mxPoint x="610" y="900"/>
+          <mxPoint x="425" y="900"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="51" value="เท็จ" style="edgeLabel;resizable=0;html=1;align=center;" connectable="0" vertex="1" parent="1">
+      <mxGeometry x="580" y="530" as="geometry"/>
+    </mxCell>
+    <mxCell id="52" value="จบ (Stop)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+      <mxGeometry x="375" y="1000" width="100" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="53" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="48" target="52">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="425" y="970" as="sourcePoint"/>
+        <mxPoint x="425" y="1000" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+  </root>
+</mxGraphModel>
