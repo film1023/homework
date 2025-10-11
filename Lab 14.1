@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <stdlib.h> 
+void findMinMax(int arr[], int size, int *min, int *max) {
+    if (size <= 0) {
+        *min = 0; 
+        *max = 0; 
+        return;
+    }
+
+    *min = arr[0];
+    *max = arr[0];
+
+    for (int i = 1; i < size; i++) {
+        if (arr[i] < *min) {
+            *min = arr[i];
+        }
+        if (arr[i] > *max) {
+            *max = arr[i];
+        }
+    }
+}
+
+int main() {
+    const int MAX_SIZE = 100;
+    int array[MAX_SIZE];
+    int count = 0;
+    int input_val;
+
+    printf("Enter value:\n");
+    //printf("Please enter a series of numbers separated by spaces (e.g., 50 10 20 30 60 70 40):\n");
+    while (count < MAX_SIZE && scanf("%d", &input_val) == 1) {
+        array[count] = input_val;
+        count++;
+        char next_char = getchar();
+        if (next_char == '\n' || next_char == EOF) {
+            ungetc(next_char, stdin);
+            break; // สิ้นสุดการรับค่าเมื่อพบ Enter
+        } else if (next_char != ' ') {
+            ungetc(next_char, stdin); 
+        }
+    }
+    if (count > 0) {
+        // 1. แสดง Index
+        printf("\nOutput:\n");
+        printf("Index: ");
+        for (int i = 0; i < count; i++) {
+            printf("%d ", i);
+        }
+        printf("\n");
+        printf("Array: ");
+        for (int i = 0; i < count; i++) {
+            printf("%d ", array[i]);
+        }
+        printf("\n");
+        int min_val, max_val;
+        findMinMax(array, count, &min_val, &max_val);
+
+        printf("Min : %d\n", min_val);
+        printf("Max : %d\n", max_val);
+    } else {
+        printf("\nOutput:\n");
+        printf("No numbers entered.\n");
+    }
+
+    return 0;
+}
