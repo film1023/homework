@@ -1,0 +1,60 @@
+#include <stdio.h>
+
+void calculate_salary() {
+    int position;      
+    int years_exp;     
+    int projects_comp;  
+
+    double base_salary = 0.0;  
+    double exp_bonus_rate = 0.0; 
+    double special_bonus_rate = 0.0; 
+    double exp_bonus = 0.0;  
+    double special_bonus = 0.0; 
+    double net_salary = 0.0; 
+
+    printf("Enter Position (1: Junior, 2: Mid-Level, 3: Senior): ");
+    scanf("%d", &position);
+    printf("Enter Years of Experience: ");
+    scanf("%d", &years_exp);
+    printf("Enter Number of Projects Completed this Year: ");
+    scanf("%d", &projects_comp);
+
+    if (position == 1) {
+        base_salary = 20000.0;
+    } else if (position == 2) {
+        base_salary = 35000.0;
+    } else if (position == 3) {
+        base_salary = 50000.0;
+    } else {
+        printf("\nError: Invalid position input. Please use 1, 2, or 3.\n");
+        return; 
+    }
+
+    if (years_exp < 1) {
+        exp_bonus_rate = 0.0;
+    } else if (years_exp >= 1 && years_exp <= 3) {
+        exp_bonus_rate = 0.10;
+    } else if (years_exp >= 4 && years_exp <= 5) {
+        exp_bonus_rate = 0.15; 
+    } else { // years_exp > 5
+        exp_bonus_rate = 0.20; 
+    }
+    exp_bonus = base_salary * exp_bonus_rate;
+    if (projects_comp > 5) {
+        special_bonus_rate = 0.05;
+        special_bonus = base_salary * special_bonus_rate;
+    } else {
+        special_bonus = 0.0; 
+    }
+    net_salary = base_salary + exp_bonus + special_bonus;
+    printf("\n--- Calculation Results ---\n");
+    printf("Base Salary: %.0f THB\n", base_salary);
+    printf("Experience Bonus: %.0f THB\n", exp_bonus);
+    printf("Special Bonus: %.0f THB\n", special_bonus);
+    printf("Net Salary: %.0f THB\n", net_salary);
+    printf("---------------------------\n");
+}
+int main() {
+    calculate_salary();
+    return 0;
+}
