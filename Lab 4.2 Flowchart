@@ -1,0 +1,87 @@
+<mxGraphModel dx="1249" dy="1343" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <!-- 1. Start -->
+    <mxCell id="2" value="เริ่ม (Start)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="340" y="30" width="100" height="50" as="geometry" />
+    </mxCell>
+    <!-- 2. Process: Declare Variables -->
+    <mxCell id="3" value="ประกาศตัวแปร: รหัสพนักงาน, ชั่วโมงทำงาน, อัตราค่าจ้าง, เงินเดือนรวม" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="270" y="110" width="240" height="60" as="geometry" />
+    </mxCell>
+    <!-- Edge 1: Start -> Declare -->
+    <mxCell id="10" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="2" target="3">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="390" y="240" as="sourcePoint" />
+        <mxPoint x="390" y="270" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- 3. Input/Output: Read Employee ID -->
+    <mxCell id="4" value="แสดง: 'Input the Employees ID...'&lt;br&gt;รับ: รหัสพนักงาน (employee_id)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+      <mxGeometry x="270" y="210" width="240" height="60" as="geometry" />
+    </mxCell>
+    <!-- Edge 2: Declare -> Read ID -->
+    <mxCell id="11" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="3" target="4">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="390" y="240" as="sourcePoint" />
+        <mxPoint x="390" y="270" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- 4. Input/Output: Read Working Hours -->
+    <mxCell id="5" value="แสดง: 'Input the working hrs:'&lt;br&gt;รับ: ชั่วโมงทำงาน (working_hrs)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+      <mxGeometry x="270" y="310" width="240" height="60" as="geometry" />
+    </mxCell>
+    <!-- Edge 3: Read ID -> Read Hours -->
+    <mxCell id="12" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="4" target="5">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="390" y="240" as="sourcePoint" />
+        <mxPoint x="390" y="270" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- 5. Input/Output: Read Salary Rate -->
+    <mxCell id="6" value="แสดง: 'Salary amount/hr:'&lt;br&gt;รับ: อัตราค่าจ้างต่อชั่วโมง (salary_per_hr)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+      <mxGeometry x="270" y="410" width="240" height="60" as="geometry" />
+    </mxCell>
+    <!-- Edge 4: Read Hours -> Read Rate -->
+    <mxCell id="13" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="5" target="6">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="390" y="240" as="sourcePoint" />
+        <mxPoint x="390" y="270" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- 6. Process: Calculate Salary -->
+    <mxCell id="7" value="คำนวณเงินเดือนรวม:&lt;br&gt;total_salary = working_hrs * salary_per_hr" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="270" y="510" width="240" height="60" as="geometry" />
+    </mxCell>
+    <!-- Edge 5: Read Rate -> Calculate -->
+    <mxCell id="14" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="6" target="7">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="390" y="240" as="sourcePoint" />
+        <mxPoint x="390" y="270" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- 7. Input/Output: Display Result -->
+    <mxCell id="8" value="แสดง: 'Expected Output:'&lt;br&gt;แสดง: 'Employees ID = [ID]'&lt;br&gt;แสดง: 'Salary = US [Salary].00'" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+      <mxGeometry x="270" y="610" width="240" height="70" as="geometry" />
+    </mxCell>
+    <!-- Edge 6: Calculate -> Display -->
+    <mxCell id="15" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="7" target="8">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="390" y="240" as="sourcePoint" />
+        <mxPoint x="390" y="270" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <!-- 8. Stop -->
+    <mxCell id="9" value="จบ (Stop)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="340" y="730" width="100" height="50" as="geometry" />
+    </mxCell>
+    <!-- Edge 7: Display -> Stop -->
+    <mxCell id="16" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="8" target="9">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="390" y="240" as="sourcePoint" />
+        <mxPoint x="390" y="270" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+  </root>
+</mxGraphModel>
