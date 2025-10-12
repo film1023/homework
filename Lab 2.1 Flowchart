@@ -1,0 +1,429 @@
+<mxGraphModel dx="1237" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="2" value="START (เริ่ม)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+      <mxGeometry x="360" y="30" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="3" value="STOP (จบ)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+      <mxGeometry x="360" y="780" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="4" value="พิมพ์: ข้อมูลเริ่มต้นการทำอาหาร" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="325" y="110" width="190" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="5" value="step_preparation()" style="shape=manualInput;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+      <mxGeometry x="345" y="170" width="150" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="6" value="step_frying()" style="shape=manualInput;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+      <mxGeometry x="345" y="230" width="150" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="7" value="step_stir_fry_and_season()" style="shape=manualInput;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+      <mxGeometry x="330" y="290" width="180" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="8" value="step_serving()" style="shape=manualInput;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+      <mxGeometry x="345" y="350" width="150" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="9" value="พิมพ์: Process finished..." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="330" y="410" width="180" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="10" value="ส่งค่า 0 คืน (return 0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="345" y="470" width="150" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="11" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="2" target="4" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="12" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="4" target="5" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="13" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="5" target="6" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="14" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="6" target="7" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="15" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="7" target="8" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="16" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="8" target="9" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="17" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="9" target="10" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="18" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="10" target="3" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="19" value="Function: step_preparation()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+      <mxGeometry x="100" y="540" width="180" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="20" value="พิมพ์: Header ขั้นตอนที่ 1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="120" y="580" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="21" value="พิมพ์: 1.1. เตรียมและทำความสะอาดอุปกรณ์" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="80" y="640" width="220" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="22" value="รอ 1 วินาที (sleep(1))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="120" y="700" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="23" value="พิมพ์: 1.2. รายละเอียดเตรียมวัตถุดิบ (หั่น/ปอก/โขลก)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="55" y="760" width="270" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="24" value="รอ 1 วินาที (sleep(1))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="120" y="820" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="25" value="พิมพ์: การเตรียมการเสร็จสมบูรณ์" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="100" y="880" width="180" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="26" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="20" target="21" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="27" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="21" target="22" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="28" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="22" target="23" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="29" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="23" target="24" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="30" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="24" target="25" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="31" value="Return" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="120" y="940" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="32" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="25" target="31" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="33" value="Function: step_frying()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+      <mxGeometry x="550" y="540" width="150" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="34" value="พิมพ์: Header ขั้นตอนที่ 2" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="540" y="580" width="180" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="35" value="พิมพ์: 2.1. ตั้งกระทะ ใส่น้ำมันรอร้อน" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="535" y="640" width="190" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="36" value="รอ 1 วินาที (sleep(1))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="560" y="700" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="37" value="พิมพ์: 2.2. ทอดใบกะเพราส่วนแรก &amp; พักไว้" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="530" y="760" width="200" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="38" value="รอ 2 วินาที (sleep(2))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="560" y="820" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="39" value="พิมพ์: 2.3. ทอดไข่เยี่ยวม้า &amp; พักไว้" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="540" y="880" width="180" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="40" value="รอ 2 วินาที (sleep(2))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="560" y="940" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="41" value="พิมพ์: การทอดเสร็จสมบูรณ์" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="545" y="1000" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="42" value="Return" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="560" y="1060" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="43" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="34" target="35" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="44" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="35" target="36" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="45" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="36" target="37" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="46" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="37" target="38" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="47" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="38" target="39" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="48" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="39" target="40" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="49" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="40" target="41" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="50" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="41" target="42" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="51" value="Function: step_stir_fry_and_season()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+      <mxGeometry x="785" y="540" width="230" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="52" value="พิมพ์: Header ขั้นตอนที่ 3" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="815" y="580" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="53" value="พิมพ์: 3.1. เทน้ำมันออก" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="830" y="640" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="54" value="รอ 1 วินาที (sleep(1))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="835" y="700" width="130" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="55" value="พิมพ์: 3.2. ผัดพริกกระเทียมให้หอม" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="815" y="760" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="56" value="รอ 1 วินาที (sleep(1))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="835" y="820" width="130" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="57" value="พิมพ์: 3.3. ใส่หมูกรอบลงผัด" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="825" y="880" width="150" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="58" value="รอ 1 วินาที (sleep(1))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="835" y="940" width="130" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="59" value="พิมพ์: 3.4. ปรุงรสด้วยซอสต่างๆ" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="815" y="1000" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="60" value="รอ 2 วินาที (sleep(2))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="835" y="1060" width="130" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="61" value="พิมพ์: 3.5. ใส่ไข่เยี่ยวม้า/ใบกะเพราที่เหลือ &amp; ผัดไฟแรง" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="785" y="1120" width="230" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="62" value="รอ 1 วินาที (sleep(1))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="835" y="1180" width="130" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="63" value="พิมพ์: การผัดกระเพราเสร็จสมบูรณ์" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="805" y="1240" width="190" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="64" value="Return" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="835" y="1300" width="130" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="65" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="52" target="53" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="66" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="53" target="54" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="67" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="54" target="55" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="68" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="55" target="56" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="69" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="56" target="57" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="70" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="57" target="58" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="71" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="58" target="59" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="72" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="59" target="60" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="73" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="60" target="61" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="74" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="61" target="62" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="75" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="62" target="63" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="76" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="63" target="64" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="77" value="Function: step_serving()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+      <mxGeometry x="1055" y="540" width="160" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="78" value="พิมพ์: Header ขั้นตอนที่ 4" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="1050" y="580" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="79" value="พิมพ์: 4.1. ตักข้าวสวยใส่จาน" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="1055" y="640" width="160" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="80" value="พิมพ์: 4.2. ราดผัดกระเพราลงบนข้าว" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="1035" y="700" width="200" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="81" value="พิมพ์: 4.3. โรยหน้าด้วยใบกะเพราทอดกรอบ" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="1025" y="760" width="220" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="82" value="รอ 1 วินาที (sleep(1))" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="1065" y="820" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="83" value="พิมพ์: อาหารพร้อมเสิร์ฟ! (Finished)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+      <mxGeometry x="1035" y="880" width="200" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="84" value="Return" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+      <mxGeometry x="1065" y="940" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="85" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="78" target="79" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="86" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="79" target="80" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="87" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="80" target="81" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="88" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="81" target="82" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="89" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="82" target="83" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="90" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="83" target="84" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="91" value="Start/Call" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+      <mxGeometry x="120" y="520" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="92" value="Start/Call" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+      <mxGeometry x="560" y="520" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="93" value="Start/Call" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+      <mxGeometry x="835" y="520" width="130" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="94" value="Start/Call" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+      <mxGeometry x="1065" y="520" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="95" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="91" target="20" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="96" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="92" target="34" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="97" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="93" target="52" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="98" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="94" target="78" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="430" y="340" as="sourcePoint" />
+        <mxPoint x="480" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+  </root>
+</mxGraphModel>
