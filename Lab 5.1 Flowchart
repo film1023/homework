@@ -1,0 +1,72 @@
+<mxGraphModel dx="820" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="3v7-f0Gg642x_5D70o90-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="350" y="40" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="3v7-f0Gg642x_5D70o90-2" value="กำหนดตัวแปร&lt;br&gt;- employeeID&lt;br&gt;- workingHours&lt;br&gt;- salaryPerHour&lt;br&gt;- totalSalary" style="shape=process;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="315" y="110" width="170" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="3v7-f0Gg642x_5D70o90-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="3v7-f0Gg642x_5D70o90-1" target="3v7-f0Gg642x_5D70o90-2">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="400" y="80" as="sourcePoint" />
+        <mxPoint x="400" y="110" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="3v7-f0Gg642x_5D70o90-4" value="รับค่า employeeID" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="320" y="200" width="160" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="3v7-f0Gg642x_5D70o90-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="3v7-f0Gg642x_5D70o90-2" target="3v7-f0Gg642x_5D70o90-4">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="400" y="170" as="sourcePoint" />
+        <mxPoint x="400" y="200" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="3v7-f0Gg642x_5D70o90-6" value="รับค่า workingHours" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="320" y="280" width="160" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="3v7-f0Gg642x_5D70o90-7" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="3v7-f0Gg642x_5D70o90-4" target="3v7-f0Gg642x_5D70o90-6">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="400" y="250" as="sourcePoint" />
+        <mxPoint x="400" y="280" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="3v7-f0Gg642x_5D70o90-8" value="รับค่า salaryPerHour" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="320" y="360" width="160" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="3v7-f0Gg642x_5D70o90-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="3v7-f0Gg642x_5D70o90-6" target="3v7-f0Gg642x_5D70o90-8">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="400" y="330" as="sourcePoint" />
+        <mxPoint x="400" y="360" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="3v7-f0Gg642x_5D70o90-10" value="คำนวณเงินเดือนรวม:&lt;br&gt;totalSalary = workingHours * salaryPerHour" style="shape=process;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="295" y="440" width="210" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="3v7-f0Gg642x_5D70o90-11" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="3v7-f0Gg642x_5D70o90-8" target="3v7-f0Gg642x_5D70o90-10">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="400" y="410" as="sourcePoint" />
+        <mxPoint x="400" y="440" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="3v7-f0Gg642x_5D70o90-12" value="แสดงผล&lt;br&gt;- ID พนักงาน&lt;br&gt;- เงินเดือนรวม (totalSalary)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="310" y="530" width="180" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="3v7-f0Gg642x_5D70o90-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="3v7-f0Gg642x_5D70o90-10" target="3v7-f0Gg642x_5D70o90-12">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="400" y="500" as="sourcePoint" />
+        <mxPoint x="400" y="530" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="3v7-f0Gg642x_5D70o90-14" value="Stop" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="350" y="620" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="3v7-f0Gg642x_5D70o90-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="3v7-f0Gg642x_5D70o90-12" target="3v7-f0Gg642x_5D70o90-14">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="400" y="590" as="sourcePoint" />
+        <mxPoint x="400" y="620" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+  </root>
+</mxGraphModel>
