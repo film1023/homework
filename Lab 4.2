@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    char employee_id[11]; 
+    int working_hrs;     
+    long long salary_per_hr; 
+    long long total_salary;  
+
+    printf("Input the Employees ID(Max. 10 chars): ");
+    scanf("%10s", employee_id); 
+
+    printf("Input the working hrs: ");
+    scanf("%d", &working_hrs);
+
+    printf("Salary amount/hr: ");
+    scanf("%lld", &salary_per_hr);
+    total_salary = (long long)working_hrs * salary_per_hr;
+    printf("\nExpected Output:\n");
+    printf("Employees ID = %s\n", employee_id);
+    printf("Salary = US %lld.00\n", total_salary);  
+    return 0;
+}
