@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int days;
+    long long seconds; 
+    const int SECONDS_PER_DAY = 86400;
+
+    printf("Input Days: ");
+    if (scanf("%d", &days) != 1) {
+        fprintf(stderr, "Error: Invalid input.\n");
+        return 1; 
+    }
+    seconds = (long long)days * SECONDS_PER_DAY;
+    printf("%d days = %lld seconds\n", days, seconds);
+    return 0; 
+}
