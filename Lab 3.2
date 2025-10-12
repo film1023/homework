@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int is_prime(int num) {
+    if (num < 2) return 0;
+    for (int i = 2; i * i <= num; i++) 
+        if (num % i == 0) return 0;
+    return 1;
+}
+
+int main() {
+    int n;
+    printf("Enter N (array size): ");
+    if (scanf("%d", &n) != 1 || n <= 0) return 1;
+    
+    int *arr = (int *)malloc(n * sizeof(int));
+    if (arr == NULL) return 1;
+
+    for (int i = 0; i < n; i++) {
+        printf("Enter value[%d]: ", i);
+        if (scanf("%d", &arr[i]) != 1) arr[i] = 0;
+    }
+
+    printf("\nIndex:  ");
+    // **Bug Fix/Style Correction:** ย้าย printf("\n") ที่เกินมา
+    for (int i = 0; i < n; i++) printf("%4d", i);
+    printf("\nArray:  ");
+    
+    for (int i = 0; i < n; i++)
+        if (is_prime(arr[i])) printf("%4d", arr[i]);
+        else printf("%4c", '#');
+    
+    printf("\n");
+    free(arr);
+    return 0;
+}
